@@ -64,10 +64,10 @@ const Contact = () => {
                 </div>
             </div>
 
-            <ReCAPTCHA
+            {/* <ReCAPTCHA
                 sitekey='6LeGyiQaAAAAAJfnXe_ZmuYjXluoFlYmJlxLxbAW'
                 size="invisible"
-                ref={reRef} />
+                ref={reRef} /> */}
 
         </Fragment>
     );
