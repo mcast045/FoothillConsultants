@@ -38,7 +38,7 @@ export const addBlog = blogData => async dispatch => {
     try {
         const config = {
             headers: {
-                'Content-Type': 'multipart/form-data'
+                'Content-Type': 'application/json'
             }
         }
 
@@ -104,8 +104,6 @@ export const sendEmail = emailData => async dispatch => {
 
 export const showBlogModal = () => ({ type: SHOW_BLOG_MODAL })
 export const removeBlogModal = () => ({ type: REMOVE_BLOG_MODAL })
-
 export const showAccountModal = () => ({ type: SHOW_ACCOUNT_MODAL })
 export const removeAccountModal = () => ({ type: REMOVE_ACCOUNT_MODAL })
-
 export const editingBlog = () => ({ type: IS_EDIT_BLOG })

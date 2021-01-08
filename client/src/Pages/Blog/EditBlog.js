@@ -25,14 +25,10 @@ const MakePost = ({ history }) => {
     const createPost = e => {
         e.preventDefault()
 
-        const formData = new FormData()
-        formData.append('title', blogData.title)
-        formData.append('text', blogData.text)
-
         if (isAuthenticated && !isEditingPost)
-            dispatch(addBlog(formData, user._id))
+            dispatch(addBlog(blogData, user._id))
         else if (isAuthenticated && isEditingPost)
-            dispatch(updateBlog(formData, blog._id))
+            dispatch(updateBlog(blogData, blog._id))
 
         redirectClick()
     }
