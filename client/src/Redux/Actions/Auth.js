@@ -27,11 +27,8 @@ export const deleteUser = () => async dispatch => {
     } catch (err) {
         dispatch({ type: REGISTER_FAIL, payload: { msg: err.response.statusText, status: err.response.status } });
     }
-
 }
 
-
-//Load user
 export const loadUser = () => async dispatch => {
 
     if (localStorage.token) setAuthToken(localStorage.token)
@@ -44,7 +41,6 @@ export const loadUser = () => async dispatch => {
     }
 }
 
-// Login user
 export const loginUser = (email, password) => async dispatch => {
     const config = {
         headers: {

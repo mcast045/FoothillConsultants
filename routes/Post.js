@@ -9,7 +9,7 @@ const router = express.Router()
 router.get('/blog/:blogId', getBlogById)
 router.get('/', getAllBlogs)
 
-// router.post('/email', sendEmail)
+router.post('/email', sendEmail)
 
 router.post('/', isUserVerified, [
     check('text', 'Text is required').not().isEmpty(),
