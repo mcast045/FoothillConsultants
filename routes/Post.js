@@ -10,7 +10,7 @@ router.get('/blog/:blogId', getBlogById)
 router.get('/', getAllBlogs)
 
 router.post('/email', sendEmail)
-// router.post('/verify', verifyContact)
+
 router.post('/', isUserVerified, [
     check('text', 'Text is required').not().isEmpty(),
     check('title', 'Title is required').not().isEmpty()
