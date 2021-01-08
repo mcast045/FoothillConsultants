@@ -51,16 +51,16 @@ export const loginUser = (email, password) => async dispatch => {
     const body = JSON.stringify({ email, password })
 
     try {
-        console.log('loginUser')
-
         const res = await axios.post('/auth', body, config)
-        console.log(res)
         dispatch({ type: CLEAR_ALL })
         dispatch({ type: LOGIN_SUCCESS, payload: res.data })
         dispatch(loadUser())
     } catch (err) {
         const errors = err.response.data.errors
-        if (errors) errors.forEach(error => dispatch(setAlert(error.response.data.msg, 'danger')))
+        if (errors) {
+            errors.forEach(error => dispatch(setAlert(error.response.data.msg, 'danger')))
+            errors.forEach(error => console.log(error))
+        }
         dispatch({ type: LOGIN_FAIL })
     }
 }

@@ -12,11 +12,14 @@ const sendEmail = async (req, res) => {
     try {
         const { name, email, subject, message, token } = req.body
 
+        console.log('before Human Check')
+
         //Use Recaptcha to verify user is human
         const human = await isHuman(token)
         if (!human)
             return res.status(400).json({ error: 'Sorry, I cannot verify that you are not a bot' })
 
+        console.log('after Human Check')
 
         const auth = {
             auth: {

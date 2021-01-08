@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb+srv://FoothillConsultants:test@cluster0.iovjm.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+        await mongoose.connect(process.env.MONGOURI, {
             useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
         })
         console.log("MongoDB Connected...")

@@ -35,7 +35,6 @@ const loginUser = async (req, res) => {
         }
         JWT.sign(
             payload,
-            // config.get('jwtSecret'),
             process.env.jwtSecret,
             { expiresIn: 36000000 },
             (err, token) => {
