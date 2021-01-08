@@ -31,10 +31,10 @@ const Contact = () => {
 
     const validateRequireForm = async e => {
         e.preventDefault()
-        // const token = await reRef.current.executeAsync()
-        // const updatedInfo = { ...information, token: token }
-        // reRef.current.reset()
-        dispatch(sendEmail(information))
+        const token = await reRef.current.executeAsync()
+        const updatedInfo = { ...information, token: token }
+        reRef.current.reset()
+        dispatch(sendEmail(updatedInfo))
         setInformation(initialContactForm)
     }
 
