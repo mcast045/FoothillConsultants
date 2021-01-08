@@ -33,7 +33,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
         <Route path="/contact" component={Contact} />
-        <Route path="/auth" component={Auth} />
+        <Route path="/admin" component={Auth} />
       </Switch>
       <Footer />
     </div>
