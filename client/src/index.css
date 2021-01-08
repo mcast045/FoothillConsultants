@@ -1,0 +1,64 @@
+:root {
+  --color-light-1: #fff;
+  --color-light-2: #999;
+  --color-primary: rgb(241, 90, 41);
+  --color-secondary: rgb(38, 34, 98);
+  --font-size-1: 1.5rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; 
+  line-height: 1.6;
+  background-color: var(--color-light-1);
+}
+
+*:focus {
+  outline: none;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list-item {
+  list-style-type: none;
+}
+
+.underline {
+  background-color: var(--color-primary);
+  height: .5rem;
+  width: 5%;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.popup {
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+.show {
+  visibility: visible;
+  transform: scale(1)
+}
+
+::selection {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}

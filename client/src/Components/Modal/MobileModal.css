@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1000px) {
+    .modal .modal-container .modal-content-container .modal-header {
+        font-size: 3rem;
+    }
+
+    .modal .modal-container .modal-content-container .modal-btn {
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .modal .modal-container .modal-content-container {
+        padding: 0 .5rem;
+    }
+
+    .modal .modal-container .modal-content-container .modal-header {
+        font-size: 2.5rem;
+    }
+
+    .modal .modal-container .modal-content-container .modal-btns {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .modal .modal-container .modal-content-container .modal-header {
+        font-size: 2rem;
+    }
+    
+    .modal .modal-container .modal-content-container .modal-btn {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        font-size: 1rem;
+
+    }
+}
+@media only screen and (max-width: 450px) {
+    .modal .modal-container .modal-content-container .modal-header {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .modal .modal-container .modal-content-container .modal-header {
+        font-size: 1.3rem;
+    }
+}

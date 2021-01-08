@@ -1,0 +1,17 @@
+.alert {
+    padding: 0.8rem;
+    margin: 1rem 0;
+    opacity: 0.9;
+    width: 25%;
+    margin: auto;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.alert-danger {
+    background: #ff0000;
+}
+
+.alert-success {
+    background: var(--color-secondary);
+}

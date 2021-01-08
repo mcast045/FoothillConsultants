@@ -1,0 +1,111 @@
+@media only screen and (max-width: 1000px) {
+    .us .us-wrapper .us_content .us_text {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .card-what-we-do {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .card-what-we-do .card-what-we-do-wrapper {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content {
+        display: flex;
+        border-radius: 0;
+    }
+
+    .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content .card-what-we-do-image {
+        width: 50%;
+        border-radius: 0;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content .card-what-we-do-content_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .parallax {
+        height: 25rem;
+    }
+
+    .us .us-wrapper .us_content img {
+        display: none;
+    }
+
+    .us .us-wrapper .us_content .us_text {
+        width: 95%;
+    }
+    
+}
+
+@media only screen and (max-width: 610px) {
+    .landing .landing-description .landing-paragraph {
+        font-size: 2rem;
+    }
+
+    .landing .landing_down-arrow {
+        font-size: 2.5rem;
+    }
+
+    .landing .landing-description .landing-header {
+        font-size: 4rem;
+    }
+
+    .parallax {
+        height: 15rem;
+    }
+
+    .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content .card-what-we-do-descrption {
+        font-size: 1rem;
+    }
+
+    .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content .card-what-we-do-title {
+        font-size: 1.2rem;
+    }
+} 
+
+@media only screen and (max-width: 500px) {
+    .landing .landing-description .landing-paragraph {
+        font-size: 1.5rem;
+    }
+
+    .landing .landing-description .landing-header {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content .card-what-we-do-descrption {
+        text-align: center;
+    }
+
+    .us .us-wrapper .us_content .us_text {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .us .us-wrapper .us_content .us_text {
+        text-align: left;
+    }
+
+    .us {
+        padding-bottom: 1rem;
+    }
+
+    .underline {
+        margin-bottom: 1rem;
+      }
+}

@@ -1,0 +1,101 @@
+.about-us .about-us-header {
+    line-height: 1;
+    padding: 1rem 0;
+    font-size: 10rem;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    color: var(--color-secondary)
+}
+
+.about-us .about-us-header span {
+    color: var(--color-primary)
+}
+
+.about-us .about-us-mission {
+    background: url('../../img/missionImg.jpg');
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.about-us .about-us-mission .about-us-mission-header {
+    font-size: 8rem;
+    line-height: 1;
+    margin: .8rem 0;
+    position: relative;
+    z-index: 1
+}
+
+.about-us .about-us-mission .about-us-mission-text {
+    width: 100%;
+    text-align: justify;
+    margin: 0 1rem;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1
+}
+
+.about-us .about-us-mission .mission-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.our-team {
+    font-size: 4rem;
+}
+
+.card-employees {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-employees .card-employees-wrapper {
+    width: 35%;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-employees .card-employees-wrapper img {
+    width: 30%;
+    height: 35rem;
+    border-radius: 100px;
+    margin: 0 1rem;
+    object-fit: cover;
+}
+
+.card-employees .card-employees-wrapper .card-employees-content {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-employees .card-employees-wrapper .card-employees-content .card-name {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+
+.card-employees .card-employees-wrapper .card-employees-content .card-position {
+    color: var(--color-light-1);
+    font-size: 1.2rem;
+    text-align: left;
+    flex: 1;
+}
+
+.card-employees .card-employees-wrapper .card-employees-content .card-email {
+    color: var(--color-primary);
+    font-weight: 700;
+    text-decoration: none;
+}

@@ -1,0 +1,32 @@
+.header {
+    background-color: var(--color-light-1);
+    box-shadow: 1px 1px var(--color-primary);
+}
+
+.header .header-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .header-wrapper .header-wrapper_list {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .header-wrapper .header-wrapper_list .header-wrapper_list-item {
+    font-size: var(--font-size-1);
+    text-transform: uppercase;
+}
+
+.header .header-wrapper .header-wrapper_list .header-wrapper_list-item .active,
+.header .header-wrapper .header-wrapper_list .header-wrapper_list-item .link:hover,
+.header .header-wrapper .header-wrapper_list .header-wrapper_list-item .link:active {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}

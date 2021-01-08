@@ -1,0 +1,31 @@
+export const SET_ALERT = "SET_ALERT"
+export const REMOVE_ALERT = "REMOVE_ALERT"
+
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
+export const LOGIN_FAIL = "LOGIN_FAIL"
+export const USER_LOADED = "USER_LOADED"
+export const AUTH_ERROR = "AUTH_ERROR"
+
+export const LOGOUT = "LOGOUT"
+export const ACCOUNT_DELETED = "ACCOUNT_DELETED"
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS"
+export const REGISTER_FAIL = "REGISTER_FAIL"
+
+export const GET_BLOGS = "GET_BLOGS"
+export const GET_BLOG = "GET_BLOG"
+export const GET_USER_BLOGS = "GET_USER_BLOGS"
+export const GET_BLOG_ERROR = "GET_BLOG_ERROR"
+export const GET_EMAIL_ERROR = "GET_EMAIL_ERROR"
+export const UPDATE_LIKES = "UPDATE_LIKES"
+export const UPDATE_BLOG = "UPDATE_BLOG"
+export const DELETE_BLOG = "DELETE_BLOG"
+export const ADD_BLOG = "ADD_BLOG"
+
+export const CLEAR_ALL = "CLEAR_ALL"
+
+export const SHOW_BLOG_MODAL = "SHOW_BLOG_MODAL"
+export const REMOVE_BLOG_MODAL = "REMOVE_BLOG_MODAL"
+export const SHOW_ACCOUNT_MODAL = "SHOW_ACCOUNT_MODAL"
+export const REMOVE_ACCOUNT_MODAL = "REMOVE_ACCOUNT_MODAL"
+
+export const IS_EDIT_BLOG = "IS_EDIT_BLOG"

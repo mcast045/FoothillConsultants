@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1300px) {
+    /* About */
+    .card-employees .card-employees-wrapper img {height: 25rem;}
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-us .about-us-header {width: 100%;}
+    .about-us .about-us-mission {padding: 2rem 0;}
+    .about-us .about-us-mission .about-us-mission-header {font-size: 4rem;}
+    .about-us .about-us-mission .about-us-mission-text {font-size: 1.5rem;}
+    .card-employees .card-employees-wrapper .card-employees-content .card-name {font-size: 1.7rem;}
+    .card-employees .card-employees-wrapper .card-employees-content .card-position {font-size: 1rem;}
+    .card-employees .card-employees-wrapper img {height: 20rem;}
+}
+
+@media only screen and (max-width: 920px) {
+    .card-employees .card-employees-wrapper img {height: 15rem;}
+}
+
+@media only screen and (max-width: 850px) {
+    .card-employees .card-employees-wrapper  {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .about-us .about-us-mission {flex-direction: column;}
+    .about-us .about-us-mission .about-us-mission-header {font-size: 4rem;}
+    .card-employees {flex-direction: column;}
+
+    .about-us .about-us-mission .about-us-mission-text {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+
+    .card-employees .card-employees-wrapper {
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .card-employees .card-employees-wrapper .card-employees-content .card-name {
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+
+    .card-employees .card-employees-wrapper .card-employees-content .card-position {
+        font-size: 1rem;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .card-employees .card-employees-wrapper img {height: 30rem;}
+}
+
+@media only screen and (max-width: 560px) {
+    .card-employees .card-employees-wrapper img {
+        height: 20rem;
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .card-employees .card-employees-wrapper img {
+        height: 10rem;
+        object-position: 1% 0%;
+    }
+}

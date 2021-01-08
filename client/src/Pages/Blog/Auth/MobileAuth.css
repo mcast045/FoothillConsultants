@@ -1,0 +1,10 @@
+@media only screen and (max-width: 850px) {
+    .auth .auth-block {
+        flex-direction: column;
+    }
+    .auth .auth-block .login,
+    .auth .auth-block .register {
+        width: 75%;
+        margin: 1rem auto;
+    }
+}

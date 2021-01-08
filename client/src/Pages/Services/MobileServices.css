@@ -1,0 +1,77 @@
+@media only screen and (max-width: 1534px) {
+    .services .services-mission .services-mission_content {
+        width: 75%;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .services .services-mission .services-mission_content {
+        width: 75%;
+        text-align: left;
+    }
+
+    .services .services-mission .services-mission_label {
+        font-size: 1.8rem;
+    }
+
+    .services .services-mission .services-mission-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .services-mission-addition .services-mission-header,
+    .services-mission-addition .services-mission-text {
+        text-align: left;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .services .services-mission .services-mission_content {
+        width: 90%;
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .services .services-mission .services-mission_content .services-mission_image,
+    .services-mission_image-addition {
+        display: none;
+    }
+
+    .services .services-mission .services-mission_content {
+        margin: 0 3rem;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .services-mission-addition .services-mission-text{width: 100%;}
+
+    .services-mission-addition:nth-child(even) .services-mission-header,
+    .services-mission-addition:nth-child(even) .services-mission-text {
+        text-align: left;
+        margin: 0;
+    }
+    .services .services-mission .services-mission-header,
+    .services-mission-addition .services-mission-header {
+        font-size: 2.5rem;
+    }
+    .services-mission-addition {
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .services .services-mission .services-mission_label {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .services .services-mission .services-mission-text {
+        font-size: 1rem;
+        padding-right: .5rem;
+    }
+}

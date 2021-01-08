@@ -1,0 +1,74 @@
+.auth .auth-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.auth .auth-block .login,
+.auth .auth-block .register {
+    width: 45%;
+    height: 45rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.auth .auth-block .login {
+    background: linear-gradient(to right bottom, var(--color-secondary), var(--color-primary));
+}
+
+.auth .auth-block .register {
+    background: linear-gradient(to right top, var(--color-primary), var(--color-secondary));
+}
+
+.auth .auth-block .login .loginForm_container,
+.auth .auth-block .register .registerForm_container {
+    margin-top: 3rem;
+}
+
+.auth .auth-block .login .loginForm_container .loginForm_label,
+.auth .auth-block .register .registerForm_container .registerForm_label {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-light-1)
+}
+
+.auth .auth-block .login .loginForm_container .loginForm_container-inputs input,
+.auth .auth-block .register .registerForm_container .registerForm_input input {
+    width: 75%;
+    padding: 1rem 0;
+    padding-left: 1rem;
+}
+
+.auth .auth-block .register .registerForm_container .registerForm_input input {
+    margin-top: 2.8rem;
+}
+
+.auth .auth-block .login .loginForm_container .loginForm_container-inputs input {
+    margin-top: 7rem;
+}
+
+.auth .auth-block .login  .loginForm_container-btn,
+.auth .auth-block .register .registerForm  .registerForm_container-btn {
+    border: none;
+    border-radius: 10px;
+    padding: .7rem 1rem;
+}
+
+.auth .auth-block .login .loginForm_container-btn {
+    margin-top: 10rem;
+}
+
+.auth .auth-block .login .loginForm_container-btn:hover,
+.auth .auth-block .register .registerForm  .registerForm_container-btn:hover {
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color: var(--color-light-1)
+}
+
+.auth .auth-block .register .registerForm  .registerForm_container-btn {
+    margin-top: 5rem;
+}
+
+.loginForm_container-input-div {
+    position: relative;
+}
