@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './About.css'
 import './MobileAbout.css'
 import Header from '../../Components/Header/Header'
@@ -13,7 +13,7 @@ const About = () => {
     }, [])
 
     return (
-        <Fragment>
+        <div className='page'>
             <Header type='About' />
             <div className='about-us'>
                 <h2 className='about-us-header section-header'>
@@ -62,7 +62,7 @@ const About = () => {
                     </div>
                 </Zoom>
             </div>
-        </Fragment>
+        </div>
     );
 }
 

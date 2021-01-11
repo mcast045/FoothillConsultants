@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import './Contact.css'
 import './MobileContact.css'
 import Header from '../../Components/Header/Header'
@@ -39,7 +39,7 @@ const Contact = () => {
     }
 
     return (
-        <Fragment>
+        <div className='page'>
             <Header type='Contact' />
             <Alert />
             <div className='contact'>
@@ -69,7 +69,7 @@ const Contact = () => {
                 size="invisible"
                 ref={reRef} />
 
-        </Fragment>
+        </div>
     );
 }
 

@@ -1,8 +1,6 @@
 const User = require('../models/User')
 const Post = require('../models/Post')
 const { validationResult } = require('express-validator')
-const fs = require('fs')
-const path = require('path')
 
 const getAllBlogs = async (req, res) => {
     try {

@@ -21,9 +21,9 @@
 }
 
 @media only screen and (max-width: 610px) {
-  .section-header {
-    font-size: 5rem !important;
-}
+    .section-header {
+      font-size: 5rem !important;
+  }
 }
 
 .App-header {

@@ -5,11 +5,11 @@
     text-align: left;
     width: 90%;
     margin: auto;
-    color: var(--color-secondary)
+    color: var(--color-secondary);
 }
 
 .contact .contact-header span {
-    color: var(--color-primary)
+    color: var(--color-primary);
 }
 
 .contact .contact-wrapper {

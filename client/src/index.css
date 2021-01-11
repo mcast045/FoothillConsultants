@@ -53,6 +53,10 @@ body {
   transition: all 1s ease-in-out;
 }
 
+.page {
+  height: calc(100vh - 67px);
+}
+
 .show {
   visibility: visible;
   transform: scale(1)
