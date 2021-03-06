@@ -1,6 +1,6 @@
 const axios = require('axios')
 const nodemailer = require('nodemailer')
-const mailGun = require('nodemailer-mailgun-transport')
+const mailGun = require('nodemailer-mailgun-transport');
 require('dotenv').config();
 
 const isHuman = async token => {
@@ -12,10 +12,12 @@ const sendEmail = async (req, res) => {
     try {
         const { name, email, subject, message, token } = req.body
 
+        console.log(process.env.MAILGUN_RECEIVER)
+
         //Use Recaptcha to verify user is human
         const human = await isHuman(token)
         if (!human)
-            return res.status(400).json({ error: 'Sorry, I cannot verify that you are not a bot' })
+            return res.status(400).json({ error: 'Recapcha Failure' })
 
         const auth = {
             auth: {
