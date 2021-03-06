@@ -5,6 +5,7 @@ import Header from '../../Components/Header/Header'
 import Alert from '../Blog/Alert/Alert'
 import { useDispatch } from 'react-redux'
 import { sendEmail } from '../../Redux/Actions/Post'
+import { setAlert } from '../../Redux/Actions/Alert'
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
@@ -17,6 +18,7 @@ const Contact = () => {
     }, [])
 
     const initialContactForm = {
+        contact: '',
         name: '',
         email: '',
         subject: '',
@@ -34,6 +36,12 @@ const Contact = () => {
         const token = await reRef.current.executeAsync()
         const updatedInfo = { ...information, token: token }
         reRef.current.reset()
+
+        if (information.contact.length > 0) {
+            dispatch(setAlert('Email Error', 'danger'))
+            return
+        }
+
         dispatch(sendEmail(updatedInfo))
         setInformation(initialContactForm)
     }
@@ -54,7 +62,7 @@ const Contact = () => {
                     </div>
 
                     <form className='contact-form' name="contact" method="POST" onSubmit={e => validateRequireForm(e)}>
-                        <input name='hidden' className="hidden" />
+                        <input type='text' name='contact' placeholder='Contact' id="contact-subject" value={information.contact} onChange={e => onChange(e)} />
                         <input type='text' id='name' name='name' placeholder='Name' value={information.name} onChange={e => onChange(e)} />
                         <input type='email' id='email' name='email' placeholder='Email' value={information.email} onChange={e => onChange(e)} />
                         <input type='text' id='subject' name='subject' placeholder='Subject' value={information.subject} onChange={e => onChange(e)} />

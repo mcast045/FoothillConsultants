@@ -77,6 +77,6 @@
     color: var(--color-primary)
 }
 
-.contact-wrapper .contact-form .hidden {
+.contact-wrapper .contact-form #contact-subject {
     display: none;
 }
