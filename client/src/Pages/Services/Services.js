@@ -18,7 +18,7 @@ import Branding from '../../img/SVG/Branding.svg'
 const Services = () => {
 
     useEffect(() => {
-        document.title = 'Foothill Consulting | Services'
+        document.title = 'Foothill Consultants | Services'
     }, [])
 
     return (

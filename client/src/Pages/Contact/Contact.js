@@ -13,7 +13,7 @@ const Contact = () => {
     const reRef = useRef()
 
     useEffect(() => {
-        document.title = 'Foothill Consulting | Contact'
+        document.title = 'Foothill Consultants | Contact'
     }, [])
 
     const initialContactForm = {

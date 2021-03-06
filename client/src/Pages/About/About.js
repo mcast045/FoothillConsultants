@@ -9,7 +9,7 @@ import Zoom from 'react-reveal/Zoom';
 const About = () => {
 
     useEffect(() => {
-        document.title = 'Foothill Consulting | About'
+        document.title = 'Foothill Consultants | About'
     }, [])
 
     return (

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-content">
                 <p>Copyright &copy; 2020. All Rights Reserved</p>
                 <div className="social">
-                    <a href='https://www.linkedin.com/company/foothill-consultants-llc/?viewAsMember=true' className="link"><i
+                    <a href='https://www.linkedin.com/company/foothill-consultants/?viewAsMember=true' className="link"><i
                         className="fab fa-linkedin"></i></a>
                     <a href='https://www.facebook.com/Foothill-Consultants-LLC-101865758136141/?modal=admin_todo_tour'
                         className="link"><i className="fab fa-facebook"></i></a>

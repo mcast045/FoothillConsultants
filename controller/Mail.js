@@ -12,8 +12,6 @@ const sendEmail = async (req, res) => {
     try {
         const { name, email, subject, message, token } = req.body
 
-        console.log(process.env.MAILGUN_RECEIVER)
-
         //Use Recaptcha to verify user is human
         const human = await isHuman(token)
         if (!human)

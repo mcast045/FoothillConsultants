@@ -16,7 +16,7 @@ const Blog = () => {
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated)
 
     useEffect(() => {
-        document.title = 'Foothill Consulting | Blog'
+        document.title = 'Foothill Consultants | Blog'
         dispatch(getBlogs())
     }, [dispatch])
 
