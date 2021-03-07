@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react'
 import "./Home.css"
 import './MobileHome.css'
 import Header from '../../Components/Header/Header'
@@ -9,7 +9,7 @@ import Strategy from '../../img/strategy.jpg'
 import Product from '../../img/product.jpg'
 import Creative from '../../img/creative.jpg'
 import ShortLogo from '../../img/shortLogo.png'
-import Zoom from 'react-reveal/Zoom';
+import Zoom from 'react-reveal/Zoom'
 
 const Home = () => {
 
@@ -23,7 +23,7 @@ const Home = () => {
             <section className="landing">
                 <div className="landing-video">
                     <div className="landing-video_overlay"></div>
-                    <video className="landing-video__content" autoPlay muted loop>
+                    <video className="landing-video__content" autoPlay playsinline muted loop>
                         <source src={VideoMP4} type="video/mp4" />
                         <source src={VideoOGG} type="video/ogg" />
                         Your browser is not supported!
