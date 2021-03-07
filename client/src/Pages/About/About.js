@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './About.css'
 import './MobileAbout.css'
 import Header from '../../Components/Header/Header'
+import Footer from '../../Components/Footer/Footer'
 import Woman from '../../img/Woman.png'
 import Man from '../../img/Man.png'
 import Zoom from 'react-reveal/Zoom';
@@ -62,6 +63,7 @@ const About = () => {
                     </div>
                 </Zoom>
             </div>
+            <Footer />
         </div>
     );
 }

@@ -2,7 +2,6 @@
     background-color: var(--color-light-2);
     display: flex;
     justify-content: space-around;
-    height: inherit;
     align-items: center;
 }
 

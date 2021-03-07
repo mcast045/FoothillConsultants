@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from 'react'
 import Header from '../../Components/Header/Header'
+import Footer from '../../Components/Footer/Footer'
 import './Services.css'
 import './MobileServices.css'
 import { Carousel } from 'react-responsive-carousel'
@@ -31,9 +32,6 @@ const Services = () => {
                 <div className='services-mission'>
                     <Carousel className='carousel' autoPlay showThumbs={false}>
                         <div className='services-mission_content'>
-                            <div className="services-mission_image">
-                                <object data={Meeting} type="image/svg+xml">Complete Marketing Redirect or Revamp</object>
-                            </div>
                             <div className='services-mission_content-text'>
                                 <label className='services-mission_label'>Complete Marketing Redirect or Revamp</label>
                                 <p className='services-mission-text'>
@@ -42,6 +40,9 @@ const Services = () => {
                                     company. We are open to hearing your ideas and to help you
                                     execute them in the best way possible to market your business.
                                 </p>
+                            </div>
+                            <div className="services-mission_image">
+                                <object data={Meeting} type="image/svg+xml">Complete Marketing Redirect or Revamp</object>
                             </div>
                         </div>
                         <div className='services-mission_content'>
@@ -61,9 +62,6 @@ const Services = () => {
                             </div>
                         </div>
                         <div className='services-mission_content'>
-                            <div className="services-mission_image">
-                                <object data={DigitalMarketing} type="image/svg+xml">Digital Advertising Planning</object>
-                            </div>
                             <div className='services-mission_content-text'>
                                 <label className='services-mission_label'>Digital Advertising Planning</label>
                                 <p className='services-mission-text'>
@@ -72,6 +70,9 @@ const Services = () => {
                                     for your audience. From PPC, reach, CPM, or location
                                     targeted marketing, we can make an ad plan that works for you.
                                 </p>
+                            </div>
+                            <div className="services-mission_image">
+                                <object data={DigitalMarketing} type="image/svg+xml">Digital Advertising Planning</object>
                             </div>
                         </div>
                         <div className='services-mission_content'>
@@ -94,7 +95,7 @@ const Services = () => {
 
                 <Zoom>
                     <div className='services-mission-addition'>
-                        <div>
+                        <div className='branding-container'>
                             <div className='services-mission-header'>Branding Direction</div>
                             <div className='services-mission-text'>
                                 If you are starting a new business, we understand how tough it can
@@ -107,7 +108,7 @@ const Services = () => {
                                 successfully.
                             </div>
                         </div>
-                        <div className="services-mission_image-addition">
+                        <div className="services-mission_image-addition translate-img">
                             <object data={Branding} type="image/svg+xml">Complete Marketing Redirect or
                             Revamp
                             </object>
@@ -145,7 +146,7 @@ const Services = () => {
                                 first page results.
                             </div>
                         </div>
-                        <div className="services-mission_image-addition">
+                        <div className="services-mission_image-addition translate-img">
                             <object data={SEO} type="image/svg+xml">Complete Marketing Redirect or
                             Revamp
                             </object>
@@ -188,6 +189,7 @@ const Services = () => {
                     </div>
 
                 </Zoom>
+                <Footer />
             </div>
         </Fragment>
     );

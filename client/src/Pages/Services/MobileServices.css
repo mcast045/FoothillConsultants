@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 740px) {
     .services .services-mission .services-mission_content .services-mission_image,
-    .services-mission_image-addition {
+    .services-mission-addition .services-mission_image-addition {
         display: none;
     }
 

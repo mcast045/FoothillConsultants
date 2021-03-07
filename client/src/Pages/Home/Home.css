@@ -79,6 +79,10 @@
     align-items: center;
 }
 
+#hompage_about-us {
+    padding-bottom: 0;
+}
+
 #homepage-about .homepage-about_wrapper .homepage-about_header,
 .us .us-wrapper .us_header {
     font-size: 4rem;

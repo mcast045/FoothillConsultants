@@ -66,3 +66,12 @@
     margin-left: auto;
     text-align: right;
 }
+
+.services-mission-addition .services-mission_image-addition {
+    display: block;
+    margin-left: auto;
+}
+
+.services-mission-addition .translate-img object {
+    -moz-transform: translateX(-50%); 
+}

@@ -2,6 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import "./Home.css"
 import './MobileHome.css'
 import Header from '../../Components/Header/Header'
+import Footer from '../../Components/Footer/Footer'
 import VideoMP4 from '../../img/video/Foothills.mp4'
 import VideoOGG from '../../img/video/Foothills.ogg'
 import Strategy from '../../img/strategy.jpg'
@@ -129,6 +130,7 @@ const Home = () => {
                         </div>
                     </Zoom>
                 </div>
+                <Footer />
             </section>
         </Fragment>
     );

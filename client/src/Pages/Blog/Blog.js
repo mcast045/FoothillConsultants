@@ -4,6 +4,7 @@ import './MobileBlog.css'
 import { Link } from 'react-router-dom'
 import Alert from './Alert/Alert'
 import Header from '../../Components/Header/Header'
+import Footer from '../../Components/Footer/Footer'
 import { useDispatch, useSelector } from 'react-redux'
 import { getBlogs } from '../../Redux/Actions/Post'
 import Moment from 'react-moment'
@@ -57,6 +58,7 @@ const Blog = () => {
                         </Fragment>
                     ))}
                 </div>
+                <Footer />
             </div>
         </Fragment >
     );

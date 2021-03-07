@@ -3,7 +3,6 @@ import './App.css'
 import store from './Redux/Store'
 import { loadUser } from './Redux/Actions/Auth'
 import setAuthToken from './utils/setAuthToken'
-import Footer from './Components/Footer/Footer'
 import Home from './Pages/Home/Home'
 import Blogs from './Pages/Blog/Blog'
 import EditBlog from './Pages/Blog/EditBlog'
@@ -25,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/blog/:id" component={Blog} />
@@ -35,7 +35,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/admin" component={Auth} />
       </Switch>
-      <Footer />
+
     </div>
   );
 }

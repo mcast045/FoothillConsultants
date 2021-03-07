@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import './Contact.css'
 import './MobileContact.css'
 import Header from '../../Components/Header/Header'
+import Footer from '../../Components/Footer/Footer'
 import Alert from '../Blog/Alert/Alert'
 import { useDispatch } from 'react-redux'
 import { sendEmail } from '../../Redux/Actions/Post'
@@ -77,6 +78,7 @@ const Contact = () => {
                 size="invisible"
                 ref={reRef} />
 
+            <Footer />
         </div>
     );
 }
