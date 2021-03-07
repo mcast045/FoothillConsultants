@@ -5,7 +5,6 @@ import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import Woman from '../../img/Woman.png'
 import Man from '../../img/Man.png'
-import Zoom from 'react-reveal/Zoom';
 
 const About = () => {
 
@@ -42,26 +41,24 @@ const About = () => {
 
                 <div className='underline'></div>
 
-                <Zoom>
-                    <div className='card-employees'>
-                        <div className='card-employees-wrapper'>
-                            <img src={Woman} alt='CEO' />
-                            <div className='card-employees-content'>
-                                <div className='card-name'>Danielle Hollembaek</div>
-                                <div className='card-position'>Chief Marketing Consultant and Owner</div>
-                                <a href="mailto:d.hollembaek@foothillconsultants.com" className='card-email'>Email Me</a>
-                            </div>
-                        </div>
-                        <div className='card-employees-wrapper'>
-                            <img src={Man} alt='CEO' />
-                            <div className='card-employees-content'>
-                                <div className='card-name'>Eryk Hollembaek</div>
-                                <div className='card-position'>Marketing and Sales President and Owner</div>
-                                <a href="mailto:e.hollembaek@foothillconsultants.com" className='card-email'>Email Me</a>
-                            </div>
+                <div className='card-employees'>
+                    <div className='card-employees-wrapper'>
+                        <img src={Woman} alt='CEO' />
+                        <div className='card-employees-content'>
+                            <div className='card-name'>Danielle Hollembaek</div>
+                            <div className='card-position'>Chief Marketing Consultant and Owner</div>
+                            <a href="mailto:d.hollembaek@foothillconsultants.com" className='card-email'>Email Me</a>
                         </div>
                     </div>
-                </Zoom>
+                    <div className='card-employees-wrapper'>
+                        <img src={Man} alt='CEO' />
+                        <div className='card-employees-content'>
+                            <div className='card-name'>Eryk Hollembaek</div>
+                            <div className='card-position'>Marketing and Sales President and Owner</div>
+                            <a href="mailto:e.hollembaek@foothillconsultants.com" className='card-email'>Email Me</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <Footer />
         </div>

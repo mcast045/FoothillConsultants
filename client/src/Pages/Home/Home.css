@@ -1,6 +1,5 @@
 .landing {
     position: relative;
-    overflow: hidden;
 }
 .landing .landing-video {
     position: absolute;
@@ -32,6 +31,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    transform: scale(0);
+    animation: scaleUp 1s ease-in forwards;
 }
 
 .landing .landing-description .landing-header {
@@ -94,6 +95,7 @@
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 10rem;
+    overflow-x: hidden;
 }
 
 .card-what-we-do .card-what-we-do-wrapper {
@@ -102,6 +104,17 @@
     position: relative;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transform: scale(0);
+}
+
+.card-what-we-do .card-what-we-do-wrapper:nth-child(1) {
+    animation: cascade 1s cubic-bezier(1,.12,.63,.83) forwards;
+}
+.card-what-we-do .card-what-we-do-wrapper:nth-child(2) {
+    animation: cascade 1s cubic-bezier(1,.12,.63,.83) .3s forwards;
+}
+.card-what-we-do .card-what-we-do-wrapper:nth-child(3) {
+    animation: cascade 1s cubic-bezier(1,.12,.63,.83) .6s forwards;
 }
 
 .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content {
@@ -160,6 +173,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 1rem;
+    animation: scaleUp 1s ease-in forwards;
 }
 
 .us .us-wrapper .us_content .us_text {
@@ -172,4 +187,14 @@
     width: 10%;
     height: 10%;
     border-radius: 40px;
+}
+
+@keyframes cascade {
+    0% {
+        transform: scale(0) translateX(50rem);
+    }
+
+    100% {
+        transform: scale(1) translateX(0);
+    }
 }

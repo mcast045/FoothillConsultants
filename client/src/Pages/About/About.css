@@ -54,6 +54,7 @@
 .card-employees {
     display: flex;
     justify-content: space-evenly;
+    animation: scaleUp 1s ease-in forwards;
 }
 
 .card-employees .card-employees-wrapper {

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, useRef, useState } from 'react'
 import "./Home.css"
 import './MobileHome.css'
 import Header from '../../Components/Header/Header'
@@ -9,7 +9,6 @@ import Strategy from '../../img/strategy.jpg'
 import Product from '../../img/product.jpg'
 import Creative from '../../img/creative.jpg'
 import ShortLogo from '../../img/shortLogo.png'
-import Zoom from 'react-reveal/Zoom'
 
 const Home = () => {
 
@@ -17,24 +16,45 @@ const Home = () => {
         document.title = 'Foothill Consultants'
     }, [])
 
+    const useOnScreen = ref => {
+        const [isIntersecting, setIntersecting] = useState(false)
+        const observer = new IntersectionObserver(
+            ([entry]) => setIntersecting(entry.isIntersecting)
+        )
+        useEffect(() => {
+            if (!isIntersecting) {
+                observer.observe(ref.current)
+                // Remove the observer as soon as the component is unmounted
+                return () => { observer.disconnect() }
+            }
+        }, [observer, ref])
+
+        return isIntersecting
+    }
+
+    const whatWeDo = useRef()
+    const isWhatWeDoVisible = useOnScreen(whatWeDo)
+    const whoWeAre = useRef()
+    const isWhoWeAreVisible = useOnScreen(whoWeAre)
+
     return (
         <Fragment>
             <Header type='Home' />
             <section className="landing">
                 <div className="landing-video">
                     <div className="landing-video_overlay"></div>
-                    <video className="landing-video__content" autoPlay playsinline muted loop>
+                    <video className="landing-video__content" autoPlay playsInline muted loop>
                         <source src={VideoMP4} type="video/mp4" />
                         <source src={VideoOGG} type="video/ogg" />
                         Your browser is not supported!
                     </video>
                 </div>
-                <Zoom>
-                    <div className="landing-description">
-                        <h1 className="landing-header">Foothill Consultants</h1>
-                        <p className="landing-paragraph">Taking You To The Top</p>
-                    </div>
-                </Zoom>
+
+                <div className="landing-description">
+                    <h1 className="landing-header">Foothill Consultants</h1>
+                    <p className="landing-paragraph">Taking You To The Top</p>
+                </div>
+
                 <div className="landing_down-arrow">
                     <a href='#homepage-about' className="link">&#8595;</a>
                 </div>
@@ -47,8 +67,8 @@ const Home = () => {
                     <div className="underline"></div>
                 </div>
 
-                <Zoom right cascade>
-                    <div className='card-what-we-do'>
+                <div ref={whatWeDo} className='card-what-we-do'>
+                    {isWhatWeDoVisible &&
                         <div className="card-what-we-do-wrapper">
                             <div className="card-what-we-do-content">
                                 <img src={Strategy} alt='strategy' className='card-what-we-do-image' />
@@ -63,7 +83,9 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                    }
 
+                    {isWhatWeDoVisible &&
                         <div className="card-what-we-do-wrapper">
                             <div className="card-what-we-do-content reverse">
                                 <img src={Product} alt='strategy' className='card-what-we-do-image' />
@@ -78,7 +100,9 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                    }
 
+                    {isWhatWeDoVisible &&
                         <div className="card-what-we-do-wrapper">
                             <div className="card-what-we-do-content">
                                 <img src={Creative} alt='strategy' className='card-what-we-do-image' />
@@ -93,8 +117,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </Zoom>
+                    }
+                </div>
             </section>
 
             <div className="parallax">
@@ -104,10 +128,10 @@ const Home = () => {
 
             {/* Who We Are */}
             <section id='hompage_about-us' className="us">
-                <div className="us-wrapper">
+                <div ref={whoWeAre} className="us-wrapper">
                     <h2 className="us_header">Who we are</h2>
                     <div className="underline"></div>
-                    <Zoom>
+                    {isWhoWeAreVisible &&
                         <div className='us_content'>
                             <div className="us_text">
                                 Foothill Consultants, LLC was founded in 2020 by
@@ -128,7 +152,7 @@ const Home = () => {
                             </div>
                             <img src={ShortLogo} alt='logo' />
                         </div>
-                    </Zoom>
+                    }
                 </div>
                 <Footer />
             </section>
