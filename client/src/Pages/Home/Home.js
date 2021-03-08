@@ -5,12 +5,15 @@ import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import VideoMP4 from '../../img/video/Foothills.mp4'
 import VideoOGG from '../../img/video/Foothills.ogg'
+import Foothills from '../../img/video/Mobile_Home_Image.PNG'
 import Strategy from '../../img/strategy.jpg'
 import Product from '../../img/product.jpg'
 import Creative from '../../img/creative.jpg'
 import ShortLogo from '../../img/shortLogo.png'
 
 const Home = () => {
+
+    const screenWidth = window.screen.width
 
     useEffect(() => {
         document.title = 'Foothill Consultants'
@@ -43,11 +46,15 @@ const Home = () => {
             <section className="landing">
                 <div className="landing-video">
                     <div className="landing-video_overlay"></div>
-                    <video className="landing-video__content" autoPlay playsInline muted loop>
-                        <source src={VideoMP4} type="video/mp4" />
-                        <source src={VideoOGG} type="video/ogg" />
+                    {screenWidth > 810 ?
+                        <video className="landing-video__content" autoPlay playsInline muted loop>
+                            <source src={VideoMP4} type="video/mp4" />
+                            <source src={VideoOGG} type="video/ogg" />
                         Your browser is not supported!
                     </video>
+                        :
+                        <img src={Foothills} className="landing-video__content" alt='Foothill Consultants' />
+                    }
                 </div>
 
                 <div className="landing-description">
