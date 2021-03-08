@@ -34,6 +34,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 50%;
     }
 
     .parallax {
@@ -48,6 +49,20 @@
         width: 95%;
     }
     
+}
+
+@media only screen and (max-width: 620px) {
+    .us .us-wrapper .us_content .us_text {
+        text-align: left;
+    }
+
+    .us {
+        padding-bottom: 1rem;
+    }
+
+    .underline {
+        margin-bottom: 1rem;
+      }
 }
 
 @media only screen and (max-width: 610px) {
@@ -94,18 +109,4 @@
     .us .us-wrapper .us_content .us_text {
         font-size: 1.2rem;
     }
-}
-
-@media only screen and (max-width: 620px) {
-    .us .us-wrapper .us_content .us_text {
-        text-align: left;
-    }
-
-    .us {
-        padding-bottom: 1rem;
-    }
-
-    .underline {
-        margin-bottom: 1rem;
-      }
 }
