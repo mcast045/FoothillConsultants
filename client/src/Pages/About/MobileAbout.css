@@ -36,6 +36,7 @@
     .card-employees .card-employees-wrapper {
         width: 100%;
         flex-direction: row-reverse;
+        border-radius: 0;
     }
 
     .card-employees .card-employees-wrapper .card-employees-content .card-name {
