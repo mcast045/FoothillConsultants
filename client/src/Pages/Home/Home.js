@@ -78,7 +78,9 @@ const Home = () => {
                     {isWhatWeDoVisible &&
                         <div className="card-what-we-do-wrapper">
                             <div className="card-what-we-do-content">
-                                <img src={Strategy} alt='strategy' className='card-what-we-do-image' />
+                                <div className='card-what-we-do-image_container'>
+                                    <img src={Strategy} alt='strategy' className='card-what-we-do-image' />
+                                </div>
                                 <div className="card-what-we-do-content_text">
                                     <h3 className='card-what-we-do-title'>Digital Marketing Consulting</h3>
                                     <p className="card-what-we-do-descrption">
@@ -95,7 +97,9 @@ const Home = () => {
                     {isWhatWeDoVisible &&
                         <div className="card-what-we-do-wrapper">
                             <div className="card-what-we-do-content reverse">
-                                <img src={Product} alt='strategy' className='card-what-we-do-image' />
+                                <div className='card-what-we-do-image_container'>
+                                    <img src={Product} alt='strategy' className='card-what-we-do-image' />
+                                </div>
                                 <div className="card-what-we-do-content_text">
                                     <h3 className='card-what-we-do-title'>Social Media Planning/Management</h3>
                                     <p className="card-what-we-do-descrption">
@@ -112,7 +116,9 @@ const Home = () => {
                     {isWhatWeDoVisible &&
                         <div className="card-what-we-do-wrapper">
                             <div className="card-what-we-do-content">
-                                <img src={Creative} alt='strategy' className='card-what-we-do-image' />
+                                <div className='card-what-we-do-image_container'>
+                                    <img src={Creative} alt='strategy' className='card-what-we-do-image' />
+                                </div>
                                 <div className="card-what-we-do-content_text">
                                     <h3 className='card-what-we-do-title'>Search Engine Optimization</h3>
                                     <p className="card-what-we-do-descrption">

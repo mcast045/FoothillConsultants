@@ -20,9 +20,13 @@
         border-radius: 0;
     }
 
-    .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content .card-what-we-do-image {
+    .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content .card-what-we-do-image_container {
         width: 50%;
+    }
+    
+    .card-what-we-do .card-what-we-do-wrapper .card-what-we-do-content .card-what-we-do-image_container .card-what-we-do-image {
         border-radius: 0;
+        height: 100%;
     }
 
     .reverse {
